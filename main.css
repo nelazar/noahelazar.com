@@ -1,0 +1,98 @@
+/* Custom fonts */
+@font-face {
+    font-family: "Young Serif";
+    src: url(fonts/YoungSerif-Regular.otf);
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(fonts/Inter-Medium.ttf);
+    font-weight: medium;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(fonts/Inter-Bold.ttf);
+    font-weight: bold;
+}
+
+/* Color palette */
+:root {
+    --navy: #02182b;
+}
+
+body {
+    margin: 0%;
+}
+
+header {
+    background-image: url(images/yellow-pink-bg.png);
+    background-size: cover;
+    background-position: right bottom;
+}
+
+.nav-grid-container {
+    display: grid;
+    grid-template-columns: 225px auto 100px 100px 200px;
+    grid-template-rows: 75px;
+    grid-auto-flow: column;
+    margin-left: 10px;
+}
+
+/* .grid-item {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+} */
+
+.logo {
+    font-family: "Young Serif", Georgia, Times, serif;
+    color: var(--navy);
+    font-size: 1.9em;
+    text-align: center;
+    margin: auto;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-link {
+    font-family: Inter, Helvetica, sans-serif;
+    color: var(--navy);
+    text-decoration: none;
+    text-align: center;
+    font-size: 0.95em;
+    font-weight: bold;
+    margin: auto;
+    padding: 10px;
+    padding-top: 17px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+.intro-grid-container {
+    display: grid;
+    grid-template-columns: auto 70px 200px 300px auto;
+    grid-template-rows: 50px 100px 100px 100px 50px;
+    column-gap: 30px;
+}
+
+.headshot {
+    width: 200px;
+    height: 200px;
+    grid-column-start: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.intro-blurb {
+    font-family: "Young Serif", Georgia, Times, serif;
+    color: white;
+    font-size: 1.9em;
+    grid-column-start: 4;
+    grid-row-start: 3;
+}
