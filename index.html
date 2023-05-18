@@ -8,14 +8,16 @@
 </head>
 
 <body>
+  <a id="top"></a>
+
   <header>
     <nav>
       <div class="nav-grid-container">
-        <button class="grid-item logo" href="/">Noah Elazar</button>
-        <div class="grid-item"></div>
-        <button class="grid-item nav-link" href="">Research</button>
-        <button class="grid-item nav-link" href="">Resumé</button>
-        <button class="grid-item nav-link" href="">Development Portfolio</button>
+        <button class="logo" href="/">Noah Elazar</button>
+        <div></div>
+        <button class="nav-link" href="">Research</button>
+        <button class="nav-link" href="">Resumé</button>
+        <button class="nav-link" href="">Portfolio</button>
       </div>
     </nav>
 
@@ -24,6 +26,62 @@
       <p class="intro-blurb">Hi! I'm Noah, a student focused on data science and accessible design.</p>
     </div>
   </header>
+
+  <hr>
+  <div class="content-columns">
+    <div class="content-body">
+      <h1>Projects</h1>
+
+      <div class="project-grid-container">
+        <img class="project" src="images/twitter-project.png" alt="The Twitter logo, a white bird, on top of a blue background">
+        <div class="project">
+          <h2 class="project-title">Twitter-based ideology score</h2>
+          <p class="project-blurb">Using retweets, I mapped the relationships between the Twitter accounts of 48 US Senators. Based on these relationships, I placed each politician on an axis which closely correlated with existing ideological measures. This technique could be expanded to enable studies of ideology at a much broader scale.</p>
+        </div>
+      </div>
+
+      <div class="project-grid-container flipped">
+        <img class="project" src="images/us-house-project.png" alt="The seal of the US House of Representatives on a grey background">
+        <div class="project">
+          <h2 class="project-title">Congressional data</h2>
+          <p class="project-blurb">I am developing a program to download transcripts of US House hearings and pre-process them for research use. My program recognizes patterns in the text to split each transcript by individual statements, enabling research by <a href="https://www.oberlin.edu/jenny-garcia">Professor Jenny Garcia</a> and others into what politicians say in Congress.</p>
+        </div>
+      </div>
+
+      <div class="project-grid-container">
+        <img class="project" src="images/septa-project.png" alt="The SEPTA (Southeastern Pennsylvania Transportation Authority) logo on a purple background">
+        <div class="project">
+          <h2 class="project-title">Transit accessibility</h2>
+          <p class="project-blurb">Working with <a href="https://www.oberlin.edu/joshua-harrington-davidson">Professor Josh Davidson</a>, I used data from Philadelphia’s SEPTA public transit system to compare accessibility before and after the addition of a new bus line between low-income neighborhoods. I statistically analyzed and visualized the data and found a significant improvement in accessibility after the line was added.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+  <div class="content-columns">
+    <div class="content-body">
+      <h1>Bio</h1>
+      <p class="bio">I’m a third-year undergraduate student at Oberlin College, and I'm originally from the DC area. I’m pursuing a double major in Computer Science and Politics, with a minor in Mathematics and a multi-disciplinary concentration in Data Science. My research interests involve using data to answer social science questions (especially regarding progressive politics and public transportation) and inclusive technology design.</p>
+      <p class="bio">When I’m not studying or doing research (which is rare!), I’m usually leading club soccer at Oberlin, watching the Washington Spirit play, or reading Ursula Le Guin. I love to travel whenever I can, and when I can’t I’m still learning about geography and the world.</p>
+    </div>
+  </div>
+
+  <hr>
+  <div class="content-columns">
+    <div class="content-body">
+      <h1>Contact</h1>
+      <div class="contact-links">
+        <a class="contact" href="mailto:noahbelazar@gmail.com"><span class="gradient-underline">noahbelazar@gmail.com</span> 🡥</a>
+        <a class="contact" href="https://twitter.com/noahelazar"><span class="gradient-underline">Twitter</span> 🡥</a>
+        <a class="contact" href="https://www.linkedin.com/in/noah-elazar/"><span class="gradient-underline">LinkedIn</span> 🡥</a>
+      </div>
+    </div>
+  </div>
   
+  <footer>
+    <p>© 2023 Noah Elazar</p>
+    <a href="#top">Back to top</a>
+  </footer>
 </body>
 </html>
