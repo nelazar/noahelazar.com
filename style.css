@@ -61,6 +61,12 @@ p {
     color: black;
 }
 
+.arrow {
+    outline-color: var(--navy);
+    width: 20px;
+    height: 20px;
+}
+
 header {
     background-image: url(images/yellow-pink-bg.png);
     background-size: cover;
