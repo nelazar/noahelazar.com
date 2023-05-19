@@ -1,7 +1,60 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 <head>
-  
+  <title>Research | Noah Elazar</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
 </head>
+
+<body>
+  <header>
+    <nav>
+      <div class="nav-grid-container">
+        <a class="logo" href="/">Noah Elazar</a>
+        <a class="nav-link white-underline" href="">Research</a>
+        <a class="nav-link" href="">Resumé</a>
+        <a class="nav-link" href="https://github.com/nelazar" target="_blank">Portfolio</a>
+      </div>
+    </nav>
+  </header>
+
+  <hr>
+  <div class="content-columns">
+    <div class="content-body">
+      <h1>Twitter-based ideology score</h1>
+      <p class="long-form">After interning in the Providence, RI mayor’s race, I was interested in quantitatively studying ideology at a local level. I quickly discovered that this would be impossible with existing measures. The academic standard for ideology measures, NOMINATE scores, rely on legislative roll-call data and are restricted to national and state legislatures. The only other main alternative, the CFscore, are based on campaign finance data. This could work for some high-profile, high-funding local races, like NYC mayor, but would be much more inaccurate for smaller races. However, the principles of the CFscore could still work with a different source of data. CFscores use campaign contributions to construct a network between politicians and donors, which can be reduced down to a small number of dimensions to create an ideological score.</p>
+      <p class="long-form">After considering a few different potential data sources, I landed on Twitter. As a social network, it naturally lends itself to the same type of analysis. Pretty much all campaigns have some sort of social media presence, and while local campaigns may not have high numbers of interactions, they will likely have more social interactions than major donors.</p>
+      <p class="long-form">As a proof-of-concept, I initially limited my data to US Senators. I constructed a matrix between each senator and the individuals who retweeted them over a set timeframe. Using this matrix, I constructed a network between each senator. This can be thought of as an ‘ideological plane,’ where senators located closer together are ideologically similar, and vice versa.</p>
+      <p class="long-form">I reduced the network down to one dimension and found that my score highly correlated with NOMINATE scores for the senators, showing that my methodology has promise as a more scalable ideological score. I am currently working to further refine my methods and generate scores for a much broader base of politicians.</p>
+
+      <a class="block" href="files/ideal-point-estimation-twitter-retweets.pdf" target="_blank"><span class="gradient-underline">Full paper</span> &#129109;</a>
+    </div>
+  </div>
+
+  <hr>
+  <div class="content-columns">
+    <div class="content-body">
+      <h1>Congressional hearing data</h1>
+      <p class="long-form">In 2022, <a href="https://www.oberlin.edu/jenny-garcia">Professor Jenny Garcia</a> approached me with a problem. She studies the words that representatives use in Congressional committees, but to do so, she has relied on a years-old dataset. Committee transcripts are publicly available, but are presented as a single text document, making it difficult to analyze who exactly said what. She wanted me to parse these transcripts and create a database where every member’s committee statements would be linked to their names.</p>
+      <p class="long-form">This was a more difficult task than expected, as the transcripts did not follow an exact template between different committees and regularly contained errors which had to be accounted for. I was able to create a system which handled all of this and drastically improve the capability to analyze these transcripts. I am currently working on UI improvements to my tool and ways to further speed up the process of data collection.</p>
+
+      <a class="block" href="https://github.com/nelazar/congressional-statements" target="_blank"><span class="gradient-underline">Github repository</span> &#129109;</a>
+    </div>
+  </div>
+
+  <hr>
+  <div class="content-columns">
+    <div class="content-body">
+      <h1>Transit accessibility</h1>
+      <p class="long-form"><a href="https://www.oberlin.edu/joshua-harrington-davidson">Professor Josh Davidson</a> hired me as a research assistant on a project of his. He wanted to analyze how accessibility changed in Philadelphia after SEPTA, the public transit authority, added a new bus line. He, along with a research team, conducted interviews on the bus line, asking riders about their travel habits and how they changed with the addition of the new bus.</p>
+      <p class="long-form">Along with Davidson and another student, I looked for different ways we could measure accessibility using the data we had. We settled on Potential Mobility Index (PMI), which measures average aerial speed between an origin and all possible destinations. A higher speed indicates greater accessibility from a location. We used r5r, a transit routing engine, to calculate travel time for our locations and then calculate PMI. We found that accessibility did significantly increase with the addition of the bus line.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2023 Noah Elazar</p>
+    <a href="#top">Back to top</a>
+  </footer>
+</body>
 </html>
