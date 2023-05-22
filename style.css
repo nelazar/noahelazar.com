@@ -93,7 +93,7 @@ header {
 
 a.nav-link, .nav-link:visited {
     font-family: Inter, Helvetica, sans-serif;
-    color: var(--navy);
+    color: black;
     text-decoration: none;
     text-align: center;
     font-size: 0.95em;
@@ -109,8 +109,8 @@ a.nav-link, .nav-link:visited {
     color: white;
 }
 
-.nav-link.white-underline {
-    /* color: white; */
+.nav-select {
+    color: black;
     background-image: linear-gradient(0deg, white, white);
     background-size: 100% 0.25em;
     background-repeat: no-repeat;
@@ -148,7 +148,6 @@ a.nav-link, .nav-link:visited {
 .content-body {
     grid-column-start: 2;
     max-width: 800px;
-    /* margin-bottom: 50px; */
 }
 
 .project-grid-container {
@@ -181,7 +180,7 @@ h2.project-title {
 }
 
 .project-blurb {
-    max-width: 400px;
+    max-width: 500px;
 }
 
 .flipped img {
@@ -193,7 +192,7 @@ h2.project-title {
 }
 
 .long-form {
-    max-width: 700px;
+    max-width: 800px;
     text-align: justify;
 }
 
@@ -220,7 +219,47 @@ a.block:hover .gradient-underline {
 }
 
 .contact-links {
-    width: 700px;
+    width: 800px;
+}
+
+.top-link {
+    margin-top: 50px;
+}
+
+p.block {
+    width: 800px;
+}
+
+.resume-entry {
+    margin-top: 25px;
+    width: 800px;
+}
+
+.resume-entry p {
+    margin: 0px;
+}
+
+.resume-title {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.resume-subtitle {
+    font-style: italic;
+    font-size: 1em;
+}
+
+.resume-date, .resume-text {
+    font-size: 1em;
+}
+
+ul {
+    margin: 10px;
+}
+
+li {
+    font-family: Inter, Helvetica, sans-serif;
+    font-size: 0.9em;
 }
 
 footer {
@@ -252,7 +291,7 @@ footer a:hover {
     color: lightgrey;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 810px) {
     .project-grid-container {
         grid-template-rows: auto auto;
         grid-auto-flow: column;
@@ -269,15 +308,7 @@ footer a:hover {
         grid-row-start: auto;
     }
 
-    .project-blurb {
-        max-width: 500px;
-    }
-    
-    .content-body {
-        max-width: 500px;
-    }
-
-    .contact-links {
+    .project-blurb, .content-body, .contact-links, p.block, .resume-entry {
         max-width: 500px;
     }
 }
@@ -330,15 +361,7 @@ footer a:hover {
         grid-template-columns: 10px auto 10px;
     }
 
-    .content-body {
-        width: 100%;
-    }
-
-    .project-title {
-        width: 100%;
-    }
-
-    .contact-links {
+    .content-body, .project-title, .contact-links, p.block, .resume-entry {
         width: 100%;
     }
 }
