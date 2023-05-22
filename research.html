@@ -5,6 +5,7 @@
   <title>Research | Noah Elazar</title>
   <link rel="stylesheet" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+  <link rel="icon" type="image/x-icon" href="/images/favicon.png">
 </head>
 
 <body>
@@ -12,8 +13,8 @@
     <nav>
       <div class="nav-grid-container">
         <a class="logo" href="/">Noah Elazar</a>
-        <a class="nav-link white-underline" href="">Research</a>
-        <a class="nav-link" href="">Resumé</a>
+        <a class="nav-link" href="/research.html"><span class="nav-select">Research</span></a>
+        <a class="nav-link" href="/resume.html">Resumé</a>
         <a class="nav-link" href="https://github.com/nelazar" target="_blank">Portfolio</a>
       </div>
     </nav>
@@ -23,7 +24,7 @@
   <div class="content-columns">
     <div class="content-body">
       <h1>Twitter-based ideology score</h1>
-      <p class="long-form">After interning in the Providence, RI mayor’s race, I was interested in quantitatively studying ideology at a local level. I quickly discovered that this would be impossible with existing measures. The academic standard for ideology measures, NOMINATE scores, rely on legislative roll-call data and are restricted to national and state legislatures. The only other main alternative, the CFscore, are based on campaign finance data. This could work for some high-profile, high-funding local races, like NYC mayor, but would be much more inaccurate for smaller races. However, the principles of the CFscore could still work with a different source of data. CFscores use campaign contributions to construct a network between politicians and donors, which can be reduced down to a small number of dimensions to create an ideological score.</p>
+      <p class="long-form">After interning in the Providence, RI mayor’s race, I was interested in quantitatively studying ideology at a local level. I quickly discovered that this would be impossible with existing measures. The academic standard for ideology measures, NOMINATE scores, rely on legislative roll-call data and are restricted to national and state legislatures. The only other main alternative, the CFscore, is based on campaign finance data. This could work for some high-profile, high-funding local races, like NYC mayor, but would be much more inaccurate for smaller races. However, the principles of the CFscore could still work with a different source of data. CFscores use campaign contributions to construct a network between politicians and donors, which can be reduced down to a small number of dimensions to create an ideological score.</p>
       <p class="long-form">After considering a few different potential data sources, I landed on Twitter. As a social network, it naturally lends itself to the same type of analysis. Pretty much all campaigns have some sort of social media presence, and while local campaigns may not have high numbers of interactions, they will likely have more social interactions than major donors.</p>
       <p class="long-form">As a proof-of-concept, I initially limited my data to US Senators. I constructed a matrix between each senator and the individuals who retweeted them over a set timeframe. Using this matrix, I constructed a network between each senator. This can be thought of as an ‘ideological plane,’ where senators located closer together are ideologically similar, and vice versa.</p>
       <p class="long-form">I reduced the network down to one dimension and found that my score highly correlated with NOMINATE scores for the senators, showing that my methodology has promise as a more scalable ideological score. I am currently working to further refine my methods and generate scores for a much broader base of politicians.</p>
